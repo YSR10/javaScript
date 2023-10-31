@@ -74,11 +74,25 @@ console.log(date.getTime());
 
 let base = prompt(`base`);
 let height = prompt(`height`);
-let area = 0.5 * b * h;
+let area = 0.5 * base * height;
 console.log(area);
 
 let sideA = prompt(`side a`);
 let sideB = prompt(`side b`);
 let sideC = prompt(`side c`);
-let perimeter = a + b + c;
+let perimeter = sideA + sideB + sideC;
 console.log(perimeter);
+
+let length = prompt(`length`);
+let width = prompt(`width`);
+let areaa = length * width;
+let perimeterr = 2 * (length + width);
+console.log(areaa);
+console.log(perimeterr);
+
+let radius = prompt(`radius`);
+let pi = prompt(`pi`);
+let areaCircle = pi * radius * radius;
+let circumference = 2 * pi * radius;
+console.log(areaCircle);
+console.log(circumference);
