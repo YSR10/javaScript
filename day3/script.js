@@ -71,3 +71,14 @@ console.log(date.getDay());
 console.log(date.getHours());
 console.log(date.getMinutes());
 console.log(date.getTime());
+
+let base = prompt(`base`);
+let height = prompt(`height`);
+let area = 0.5 * b * h;
+console.log(area);
+
+let sideA = prompt(`side a`);
+let sideB = prompt(`side b`);
+let sideC = prompt(`side c`);
+let perimeter = a + b + c;
+console.log(perimeter);
