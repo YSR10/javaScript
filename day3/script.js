@@ -96,3 +96,27 @@ let areaCircle = pi * radius * radius;
 let circumference = 2 * pi * radius;
 console.log(areaCircle);
 console.log(circumference);
+
+let x = prompt(`X`);
+let y = 2 * x - 2;
+console.log(`the slope is ${y}`);
+
+let m = (10 - 2) / (6 - 2);
+console.log(m);
+console.log(y == m);
+
+y = x * x + 6 * x + 9;
+x = prompt("x");
+console.log(y);
+
+// let name = prompt("Enter your name");
+//  let nameLenght = name.length
+//  nameLenght > 7 ? alert("your name is long");
+//  alert("your name is short");
+let name = prompt("Enter your name");
+let nameLenght = name.length;
+nameLenght > 7 ? console.log("your name is long");
+console.log("your name is short");
+
+const todaysDate = newDate();
+console.log(todaysDate);
