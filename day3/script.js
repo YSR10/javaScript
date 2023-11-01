@@ -1,5 +1,5 @@
 //level 1
-
+//1 Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
 let firstName = `yasir`;
 console.log(typeof firstName); //string
 let lastName = `sulyman`;
@@ -15,24 +15,28 @@ console.log(isMarried); //boolean
 let year = 2023;
 console.log(typeof year); //number
 
+//2 Check if type of '10' is equal to 10
 let tenString = `10`;
 let tenNum = 10;
 console.log(typeof `10` === 10);
 
+//3 Check if parseInt('9.8') is equal to 10
 let parseint = 9.8;
 let numb = 10;
 console.log(parseInt(9.8) === 10);
 
+//4 Write three JavaScript statement which provide falsy value.
 //Write three JavaScript statement which provide truthy value.
+//Write three JavaScript statement which provide falsy value.
 console.log(4 > 3);
 console.log(5 > 4);
 console.log(6 > 5);
 
-//Write three JavaScript statement which provide falsy value.
 console.log(2 < 1);
 console.log(3 < 2);
 console.log(4 < 3);
 
+//5 Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
 4 > 3; // true
 4 >= 3; //true
 4 < 3; //false
@@ -48,6 +52,7 @@ let py = `python`.length;
 let ja = `jargon`.length;
 console.log(py != ja);
 
+//6 Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 4 > 3 && 10 < 12; //true
 4 > 3 && 10 > 12; //true
 4 > 3 || 10 < 12; //false
@@ -58,10 +63,10 @@ console.log(py != ja);
 !(4 > 3 && 10 < 12); //false
 !(4 > 3 && 10 > 12); // true
 !(4 === "4"); //true
-
 let string = "there is no 'on' in dragon and python";
 console.log(!"dragon".includes("on") && !"python".includes("on")); //false
 
+//7 Use the Date object to do the following activities
 const date = new Date();
 console.log(date);
 console.log(date.getFullYear());
@@ -72,17 +77,22 @@ console.log(date.getHours());
 console.log(date.getMinutes());
 console.log(date.getTime());
 
+//level 2
+
+//1 Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
 let base = prompt(`base`);
 let height = prompt(`height`);
 let area = 0.5 * base * height;
 console.log(area);
 
+//2 Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 let sideA = prompt(`side a`);
 let sideB = prompt(`side b`);
 let sideC = prompt(`side c`);
 let perimeter = sideA + sideB + sideC;
 console.log(perimeter);
 
+//3 Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 let length = prompt(`length`);
 let width = prompt(`width`);
 let areaa = length * width;
@@ -90,6 +100,7 @@ let perimeterr = 2 * (length + width);
 console.log(areaa);
 console.log(perimeterr);
 
+//4 Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 let radius = prompt(`radius`);
 let pi = prompt(`pi`);
 let areaCircle = pi * radius * radius;
@@ -105,6 +116,7 @@ let y_Intercept = 4;
 let answerIntercept = (y_Intercept = 2 * x_Intercept - 2);
 console.log("Slope =", answerIntercept);
 
+//6 Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
 // let x = prompt(`X`);
 // let y = 2 * x - 2;
 // console.log(`the slope is ${y}`);
