@@ -141,3 +141,64 @@ switch (days) {
 }
 
 //level 3
+// 1Write a program which tells the number of days in a month.
+// Enter a month: January
+// January has 31 days.
+
+// Enter a month: JANUARY
+// January has 31 day
+
+// Enter a month: February
+// February has 28 days.
+
+// Enter a month: FEbruary
+// February has 28 days.
+let month = "february";
+switch (month) {
+  case "january":
+  case "march":
+  case "may":
+  case "july":
+  case "august":
+  case "october":
+  case "december":
+    console.log(`${month} has 31 days`);
+    break;
+  case "september":
+  case "april":
+  case "june":
+  case "november":
+    console.log(`${month} has 30 days`);
+    break;
+  case "february":
+    console.log(`${month} has 28 days`);
+    break;
+  default:
+    console.log(`${month} is not a month`);
+    break;
+}
+
+let monthDay = "february";
+switch (monthDay) {
+  case "january":
+  case "march":
+  case "may":
+  case "july":
+  case "august":
+  case "october":
+  case "december":
+    console.log(`${monthDay} has 31 days`);
+    break;
+  case "september":
+  case "april":
+  case "june":
+  case "november":
+    console.log(`${monthDay} has 30 days`);
+    break;
+  case "february":
+    console.log(`${monthDay} has 29 days`);
+    break;
+  default:
+    console.log(`${monthDay} is not a month`);
+    break;
+}
