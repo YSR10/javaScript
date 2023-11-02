@@ -73,3 +73,42 @@ console.log(itCompanies[6].toUpperCase());
 console.log(itCompanies.join(`,`));
 
 //13 Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+// console.log();
+
+if (itCompanies.includes("Facebook")) {
+  console.log("Facebook Company");
+} else {
+  console.log("Company not found");
+}
+
+//15 Sort the array using sort() method
+itCompanies.sort();
+console.log(itCompanies);
+
+//16 Reverse the array using reverse() method
+itCompanies.reverse();
+console.log(itCompanies);
+
+//17 Slice out the first 3 companies from the array
+console.log(itCompanies.slice(3, 0, 1, 2));
+
+//18 Slice out the last 3 companies from the array
+console.log(itCompanies.slice(3, 4, 5, 6));
+
+//19 Slice out the middle IT company or companies from the array
+console.log(itCompanies.slice(3, 3));
+
+//20 Remove the first IT company from the array
+itCompanies.shift();
+console.log(itCompanies);
+
+// 21.Remove the middle IT company or companies from the array
+let middleIt = itCompanies.splice(4, 4);
+console.log(middleIt);
+
+//22 Remove the last IT company from the array
+itCompanies.pop();
+console.log(itCompanies);
+
+//23 Remove all IT companies
+console.log(itCompanies.splice());
