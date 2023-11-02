@@ -81,6 +81,8 @@ if (itCompanies.includes("Facebook")) {
   console.log("Company not found");
 }
 
+//14 Filter out companies which have more than one 'o' without the filter method
+
 //15 Sort the array using sort() method
 itCompanies.sort();
 console.log(itCompanies);
