@@ -139,3 +139,9 @@ let word = sentence
 
 console.log(word);
 //4 Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+let salary = 5000;
+let annualBonus = 10000;
+let onlineSalary = 15000;
+let monthlyBonus = annualBonus / 12;
+let totalMoneyPerMonth = salary + onlineSalary + monthlyBonus;
+console.log(totalMoneyPerMonth);
