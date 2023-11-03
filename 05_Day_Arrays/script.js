@@ -154,3 +154,15 @@ const fullStack = frontEnd.concat(backEnd);
 console.log(fullStack);
 
 // level 3
+
+// The following is an array of 10 students ages:
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+// Sort the array and find the min and max age
+const max = Math.max(...ages);
+console.log(max);
+const min = Math.min(...ages);
+console.log(min);
+const sortAges = ages.sort();
+console.log(sortAges);
+console.log(Math.min(19, 22, 19, 24, 20, 25, 26, 24, 25, 24));
+console.log(Math.max(19, 22, 19, 24, 20, 25, 26, 24, 25, 24));
