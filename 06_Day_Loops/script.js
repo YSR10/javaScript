@@ -1,3 +1,4 @@
+// level 1
 //1 Iterate 0 to 10 using for loop, do the same using while and do while loop
 for (let i = 0; i <= 10; i++) {
   console.log(i);
@@ -168,3 +169,48 @@ for (let i = 0; i <= 5; i++) {
   id = id + characters.charAt(alphanumeric);
 }
 console.log(id);
+
+// level 2
+
+//1 Develop a small script which generate any number of characters random id:
+let yasir = (Math.random() + 1).toString(20).substring(2);
+console.log(`randomNumber`, yasir);
+let we = (Math.random() + 1).toString(15).substring(2);
+console.log(we);
+
+//2 Write a script which generates a random hexadecimal number. '#ee33df'
+let hexadecimal = `#qwertyuiop2314567890bvcxznmjk`;
+id = ``;
+for (let i = 0; i <= 6; i++) {
+  const alpha = Math.floor(Math.random() * hexadecimal.length);
+  id = id + hexadecimal.charAt(alpha);
+}
+console.log(id);
+
+//3 Write a script which generates a random rgb color number. rgb(240,180,80)
+let rgb = `rgb`;
+let number = Math.floor(Math.random() * 255);
+console.log(`${rgb} (${number}, ${number}, ${number})`);
+
+//4 Using the above countries array, create the following new array.
+// ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+
+const country = [
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
+
+let newCountry = [];
+for (let i = 0; i < country.length; i++) {
+  newCountry.push(country[i].toUpperCase());
+}
+console.log(newCountry);
