@@ -214,3 +214,85 @@ for (let i = 0; i < country.length; i++) {
   newCountry.push(country[i].toUpperCase());
 }
 console.log(newCountry);
+
+//5 Using the above countries array, create an array for countries length'.
+console.log([
+  country[0].length,
+  country[1].length,
+  country[2].length,
+  country[3].length,
+  country[4].length,
+  country[5].length,
+  country[6].length,
+  country[7].length,
+  country[8].length,
+  country[9].length,
+  country[10].length,
+]);
+
+//6 Using the above countries array, create an array for countries length'.
+// [
+//   ['Albania', 'ALB', 7],
+//   ['Bolivia', 'BOL', 7],
+//   ['Canada', 'CAN', 6],
+//   ['Denmark', 'DEN', 7],
+//   ['Ethiopia', 'ETH', 8],
+//   ['Finland', 'FIN', 7],
+//   ['Germany', 'GER', 7],
+//   ['Hungary', 'HUN', 7],
+//   ['Ireland', 'IRE', 7],
+//   ['Iceland', 'ICE', 7],
+//   ['Japan', 'JAP', 5],
+//   ['Kenya', 'KEN', 5]
+// ]
+
+console.log(country[0].slice(0, 3).toUpperCase());
+console.log(`[
+  ['${country[0]}','${country[0].slice(0, 3).toUpperCase()}', ${
+  country[0].length
+}]\n
+['${country[1]}','${country[1].slice(0, 3).toUpperCase()}', ${
+  country[1].length
+}]\n
+['${country[2]}','${country[2].slice(0, 3).toUpperCase()}', ${
+  country[2].length
+}]\n
+['${country[3]}','${country[3].slice(0, 3).toUpperCase()}', ${
+  country[3].length
+}]\n
+['${country[4]}','${country[4].slice(0, 3).toUpperCase()}', ${
+  country[4].length
+}]\n
+['${country[5]}','${country[5].slice(0, 3).toUpperCase()}', ${
+  country[5].length
+}]\n
+['${country[6]}','${country[6].slice(0, 3).toUpperCase()}', ${
+  country[6].length
+}]\n
+['${country[7]}','${country[7].slice(0, 3).toUpperCase()}', ${
+  country[7].length
+}]\n
+['${country[8]}','${country[8].slice(0, 3).toUpperCase()}', ${
+  country[8].length
+}]\n
+['${country[9]}','${country[9].slice(0, 3).toUpperCase()}', ${
+  country[9].length
+}]\n
+['${country[10]}','${country[10].slice(0, 3).toUpperCase()}', ${
+  country[10].length
+}]
+]`);
+
+//7 In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+let arr = [];
+arr = country.includes(`land`);
+console.log(arr);
+
+//8
+for (const yas of country) {
+  let yasarray = [];
+  yasarray.push(yas);
+  if (yas.endsWith(`ia`)) {
+    console.log(yasarray);
+  }
+}
