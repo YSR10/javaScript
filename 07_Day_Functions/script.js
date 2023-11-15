@@ -8,7 +8,7 @@ fullName();
 function printFullName(firstName, lastName) {
   return `${firstName} ${lastName}`;
 }
-console.log(fullName(`yasir`, `sulyman`));
+console.log(printFullName(`yasir`, `sulyman`));
 
 //3 Declare a function addNumbers and it takes two two parameters and it returns sum.
 function addNumbers(y, m) {
@@ -37,3 +37,11 @@ function volumeOfRectPrism(length, width, height) {
   return calc;
 }
 console.log(volumeOfRectPrism(3, 4, 5));
+
+//7 Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
+
+function areaOfCircle(pi, r, r) {
+  calc = pi * r * r;
+  return calc;
+}
+console.log(areaOfCircle(3.412, 9, 6));
