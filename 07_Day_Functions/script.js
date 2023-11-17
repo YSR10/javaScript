@@ -144,3 +144,40 @@ console.log(findMax(0, 10, 5))
 10
 console.log(findMax(0, -10, -2))
 0*/
+function findMax(param1, param2, param3) {
+  if (param1 > param2 && param1 > param3) {
+    return param1;
+  } else if (param2 > param1 && param2 > param3) {
+    return param2;
+  } else if (param3 > param1 && param3 > param2) {
+    return param3;
+  }
+}
+console.log(findMax(2, 3, 4));
+console.log(findMax(5, 6, 7));
+console.log(findMax(-0, 8, 4));
+
+// level2
+//1 Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
+function solveLinEquation(a, b, c) {
+  let b = `b`;
+  let linear = b + a ** 6;
+  return linear;
+}
+console.log(solveLinEquation(6));
+
+//2 Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
+
+// console.log(solveQuadratic()) // {0}
+// console.log(solveQuadratic(1, 4, 4)) // {-2}
+// console.log(solveQuadratic(1, -1, -2)) // {2, -1}
+// console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
+// console.log(solveQuadratic(1, 0, -4)) //{2, -2}
+// console.log(solveQuadratic(1, -1, 0)) //{1, 0}
+
+//3 Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
+function printArray(yasir1, yasir2) {
+  let myName = [yasir1, yasir2];
+  return myName;
+}
+console.log(printArray(`sulyman, yasir`));
