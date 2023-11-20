@@ -160,8 +160,8 @@ console.log(findMax(-0, 8, 4));
 // level2
 //1 Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
 function solveLinEquation(a, b, c) {
-  let b = `b`;
-  let linear = b + a ** 6;
+  let me = `me`;
+  let linear = me + a ** 6;
   return linear;
 }
 console.log(solveLinEquation(6));
@@ -181,3 +181,54 @@ function printArray(yasir1, yasir2) {
   return myName;
 }
 console.log(printArray(`sulyman, yasir`));
+
+//4 Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+const showDateTime = () => {
+  let newdate = new Date();
+  let day = newdate.getDay();
+  let month = newdate.getMonth();
+  let year = newdate.getFullYear();
+  let hours = newdate.getHours();
+  let minutes = newdate.getMinutes();
+  let total = `${day}/${month}/${year}  ${hours}:${minutes}`;
+  return total;
+};
+console.log(showDateTime());
+
+//5 Declare a function name swapValues. This function swaps value of x to y.
+// swapValues(3, 4) // x => 4, y=>3
+// swapValues(4, 5) // x = 5, y = 4
+function swapValues() {
+  let swap1 = y;
+  let swap2 = x;
+  let swaps = `x = ${swap1}, y =${swap2}`;
+  return swaps;
+}
+console.log(swapValues(1, 3));
+
+//6 Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+let reverseArray = (params) => {
+  let reverse = params.reverse();
+  return reverse;
+};
+console.log(reverseArray([0, 1, 2, 3]));
+
+//7 Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+const capitalizeArray = (...params) => {
+  console.log(params);
+};
+
+capitalizeArray(`boy`, `male`, `man`);
+
+//8 Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+function addItem(arr = [`pen`, `book`, `mouse`]) {
+  return arr;
+}
+console.log(addItem);
+
+//9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+const removeItem = (arr = [`pen`, `book`, `laptop`, `phone`]) => {
+  return param;
+};
+console.log(removeItem([`laptop`, `mouse`]));
