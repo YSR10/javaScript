@@ -198,15 +198,16 @@ console.log(showDateTime());
 //5 Declare a function name swapValues. This function swaps value of x to y.
 // swapValues(3, 4) // x => 4, y=>3
 // swapValues(4, 5) // x = 5, y = 4
-function swapValues() {
-  let swap1 = y;
-  let swap2 = x;
-  let swaps = `x = ${swap1}, y =${swap2}`;
+function swapValues(x, y) {
+  let swaps1 = y;
+  let swaps2 = x;
+  let swaps = `x=${swaps1}, y=${swaps2}`;
   return swaps;
 }
-console.log(swapValues(1, 3));
 
-//6 Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+console.log(swapValues(100, 200));
+
+//6 Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use   od).
 
 let reverseArray = (params) => {
   let reverse = params.reverse();
@@ -228,7 +229,41 @@ function addItem(arr = [`pen`, `book`, `mouse`]) {
 console.log(addItem);
 
 //9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
-const removeItem = (arr = [`pen`, `book`, `laptop`, `phone`]) => {
-  return param;
+const removeItem = (arr = [`pen`, `b ook`, `laptop`, `p"hone`]) => {
+  return arr;
 };
 console.log(removeItem([`laptop`, `mouse`]));
+
+//10 Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+let sum = 0;
+function sumOfNumbers(param = 2) {
+  for (let i = 0; i <= param; i++) {
+    let = sum += i;
+  }
+  return sum;
+}
+console.log(sumOfNumbers(20));
+
+//11 Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+const sumOfOdds = (paramOdd) => {
+  let odd = 0;
+  for (let i = 0; i <= paramOdd; i++) {
+    if (i % 2 === 1) {
+      odd += i;
+    }
+  }
+  return odd;
+};
+console.log(sumOfOdds(10));
+
+//12 Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+const sumOfEven = (paramEven) => {
+  let even = 0;
+  for (let i = 0; i <= paramEven; i++) {
+    if (i % 2 === 0) {
+      even += i;
+    }
+  }
+  return even;
+};
+console.log(sumOfEven(10));
